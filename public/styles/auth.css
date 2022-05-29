@@ -1,0 +1,97 @@
+.container {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+
+  grid-template-rows: repeat(2, 1fr);
+
+  height: 80vh;
+  padding: 0 20px;
+}
+/* #region Шапка страницы авторизации */
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--font-color);
+
+  padding: 0.5rem 1rem;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  user-select: none;
+  moz-user-select: none;
+}
+
+/* Кнопка Помощь */
+.help {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+}
+
+.help::after {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: '?';
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-color: var(--font-color);
+  color: var(--main-color);
+  font-size: 1.75rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+/* #endregion */
+/* #region Карточка */
+.card {
+  display: grid;
+  grid-auto-rows: minmax(2rem, 5rem);
+  border: 1px solid var(--main-color);
+  border-radius: 1rem;
+
+  width: 750px;
+
+  grid-template-areas:
+    'title'
+    'login'
+    'password'
+    'btn';
+}
+
+.card-title {
+  grid-area: title;
+  text-align: center;
+}
+
+.login {
+  grid-area: login;
+}
+
+.password {
+  grid-area: password;
+}
+
+.auth-button {
+  grid-area: btn;
+  width: 35%;
+  height: 2.5rem;
+
+  margin: 0 auto;
+}
+/* #endregion */
+.slogan {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  margin: 2rem 0;
+}

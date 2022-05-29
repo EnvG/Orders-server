@@ -5,7 +5,7 @@ module.exports = {
   },
   DATABASE: {
     URL: 'localhost',
-    database: 'appDB',
+    database: 'Orders',
     user: 'root',
     password: 'root',
   },

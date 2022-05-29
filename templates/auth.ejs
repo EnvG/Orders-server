@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="../public/styles/common.css">
+    <link rel="stylesheet"
+          href="../public/styles/auth.css">
+    <script src="../public/scripts/utils/jQuery v3.6.0.js"></script>
+    <script src="../public/scripts/utils/reqs.js"></script>
+
+    <script src="../public/scripts/auth.js"></script>
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <%- include('./common/auth-header.ejs')
+        %>
+        <%=error%>
+            <div class="slogan">АО РАТЕП —<br>
+                «Помня историю, создавать будущее...»</div>
+            <div class="container">
+                <div class="card">
+                    <h1 class="card-title">Авторизация</h1>
+                    <label class="login">
+                        Логин
+                        <input type="text"
+                               id="login">
+                    </label>
+                    <label class="password">
+                        Пароль
+                        <input type="password"
+                               id="password">
+                    </label>
+
+                    <button class="btn auth-button"
+                            id="auth-button">Войти</button>
+                </div>
+            </div>
+</body>
+
+</html>
